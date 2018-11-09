@@ -21,9 +21,10 @@ public class CircularLinkedlist {
 //Display elements on Circular list...
 	public void displayList(){
 		Node current = tail;
-		if(tail == null)
-			System.out.println("List is empty.");
-
+		if(tail == null) {
+            System.out.println("List is empty.");
+            return;
+        }
 		System.out.println("Elements:"+current.getData());
 		current = current.getNextNode();
 		while(current.equals(tail) == false) {
