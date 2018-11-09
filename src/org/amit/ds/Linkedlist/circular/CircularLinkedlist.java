@@ -74,5 +74,13 @@ public class CircularLinkedlist {
 		}
 		return flag;
 	}
-	
+
+	//Rotate function for circular list by one element.
+	public void rotateList(){
+		if(tail.getNextNode() == tail){
+			System.out.println("Rotation is not possible, only one element is present.");
+			return;
+		}
+		tail = tail.getNextNode();
+	}
 }
