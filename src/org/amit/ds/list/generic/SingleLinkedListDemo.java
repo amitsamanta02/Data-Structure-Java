@@ -4,12 +4,12 @@ public class SingleLinkedListDemo {
 
 	public static void main(String[] args) {
 		SingleLinkedList<String> list = new SingleLinkedList<String>();
-		list.insertAtHead("amit");
-		list.insertAtHead("Anup");
-		list.insertAtHead("Riya");
-		list.insertAtHead("Rimi");
-		list.insertAtHead("Ritu");
-		list.insertAtHead("Rintu");
+		list.insertAtStart("amit");
+		list.insertAtStart("Anup");
+		list.insertAtStart("Riya");
+		list.insertAtStart("Rimi");
+		list.insertAtStart("Ritu");
+		list.insertAtStart("Rintu");
 	
 		list.printNode();
 		
@@ -24,18 +24,20 @@ public class SingleLinkedListDemo {
 		SingleLinkedList<DataType> linklist = new SingleLinkedList<DataType>();
 		DataType dataType = null;
 		dataType = new DataType(100,"amit");
-		linklist.insertAtHead(dataType);
+		linklist.insertAtStart(dataType);
 		
 		dataType = new DataType(200,"anup");
-		linklist.insertAtHead(dataType);
+		linklist.insertAtStart(dataType);
 		
 		dataType = new DataType(300,"riya");
-		linklist.insertAtHead(dataType);
+		linklist.insertAtStart(dataType);
 		
 		dataType = new DataType(400,"xxxx");
 		linklist.insertAtEnd(dataType);
 		
 		linklist.printNode();
+
+		System.out.println("First element:"+linklist.removeFirst());
 	}
 
 }
