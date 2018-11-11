@@ -6,14 +6,7 @@ package org.amit.ds.list.generic;
 
 public class SingleLinkedList<T> {
 	private Node<T> head ;
-	
-	public void insertAtEnd(T data){
-		Node<T> newNode = new Node<T>(data);
-		Node<T> current = head;
-		while(current.getNextNode()!=null)
-			current = current.getNextNode();
-		current.setNextNode(newNode);
-	}
+
 	
 	public void printNode(){
 		Node<T> current = head;
@@ -60,7 +53,7 @@ public class SingleLinkedList<T> {
 	public T removeFirst(){
 			Node<T> current = this.head;
 			if(current==null){
-				System.out.println("Stack is empty.");
+				System.out.println(" Empty data base.");
 				return null;
 			}
 			else {
@@ -91,7 +84,23 @@ public class SingleLinkedList<T> {
 		}
 		return count;
 	}
+
 	/*
-	############### STACH IMPLEMENTATION IS ENDED HERE######################
-	 */
+################ BELOW METHODS ARE ADDED FOR IMPLEMENTATIONS OF Queue DATA STRUCTURE #################
+--------------------------------------------------------------------------------------------------------
+	*/
+
+	public void insertAtEnd(T data){
+		Node<T> newNode = new Node<T>(data);
+		if(head == null){
+			head = newNode;
+		}
+		else {
+			Node<T> current = head;
+			while (current.getNextNode() != null)
+				current = current.getNextNode();
+			current.setNextNode(newNode);
+		}
+	}
+
 }
