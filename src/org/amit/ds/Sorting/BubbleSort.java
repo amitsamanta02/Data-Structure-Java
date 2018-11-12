@@ -1,4 +1,8 @@
-package org.amit.ds.sort;
+/*
+ * Writer: Amit Samanta , Email: amitsamanta002@gmail.com
+ */
+
+package org.amit.ds.Sorting;
 
 public class BubbleSort {
 	
