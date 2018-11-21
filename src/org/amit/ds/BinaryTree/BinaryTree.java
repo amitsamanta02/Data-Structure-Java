@@ -1,5 +1,6 @@
 /*
  * Writer: Amit Samanta , Email: amitsamanta002@gmail.com
+ * Mobile No - 98333 274 83
  */
 
 package org.amit.ds.BinaryTree;
@@ -81,6 +82,7 @@ public class BinaryTree{
     public void preOrder(){
         preOdersearch(root);
     }
+
   //postOrder Search
 
     public void postOrderSearch(Node root){
@@ -90,6 +92,7 @@ public class BinaryTree{
             System.out.println("Data->:"+root.data);
         }
     }
+
     public void postOrder(){
         postOrderSearch(root);
     }
